@@ -1,0 +1,153 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--Very-dark-blue1);
+}
+
+:root {
+    --Very-dark-blue1: hsl(217, 54%, 11%);
+    --Very-dark-blue2: hsl(216, 50%, 16%);
+    --Very-dark-blue3: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+}
+
+.card {
+    background-color: var(--Very-dark-blue2);
+    max-width: 500px;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 15px;
+}
+
+.card img {
+    max-width: 90%;
+    margin-top: 20px;
+    border-radius: 10px;
+    z-index: -1;
+}
+.card .overlay {
+    display: block;
+    position: absolute;
+    width: 450px;
+    height: 40%;
+    top: 30.5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+}
+.card .overlay:hover{
+    background-color: rgb(20, 232, 248,50%);
+}
+.card .overlay svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+    display: none; 
+}
+.card .overlay:hover svg{
+    display: block;
+}
+
+
+.container h1 {
+    color: var(--White);
+    padding-top: 10px;
+    text-align: start;
+    margin-left: 25px;
+    padding-bottom: 10px;
+    font-weight: 400;
+}
+
+.container h1:hover{
+    color: var(--Cyan);
+}
+.container .pre{
+    font-size: 24px;
+}
+.container p {
+    color: var(--soft-blue);
+    width: 100%;
+    font-size: 18px;
+    text-align: start;
+    padding-left: 25px;
+}
+
+.container .INFO {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 20px;
+}
+
+.container .INFO .f1 {
+    text-align: start;
+
+}
+
+.container .INFO .f1 .icon {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    transform: translateX(-70%);
+
+}
+
+.container .INFO .f2 {
+    text-align: end;
+    margin-right: 30px;
+}
+
+.container .INFO .f2 .icon {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    transform: translateX(-90%);
+}
+
+.container .INFO .icon :hover {
+    fill: var(--Cyan);
+}
+
+.container .INFO p:hover {
+    color: var(--Cyan);
+}
+.container hr{
+    width: 90%;
+    margin-left: 20px;
+}
+.footer {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.footer p{
+    color: var(--soft-blue);
+    font-size: 18px;
+    
+}
+.footer img{
+    width: 40px;
+    text-align: start;
+    transform: translatey(-70%);
+    border-radius: 50%;
+    border: 2px solid var(--White);
+    margin-left: 20px;
+    margin-right: 10px;
+    z-index: 2;
+}
+.footer span{color: rgb(255, 255, 255);}
+.footer span:hover {color: var(--Cyan);}
